@@ -1,0 +1,15 @@
+####################
+### Licht wecker ###
+####################
+
+   - alias: lichtwecker
+     hide_entity: False
+     trigger:
+       platform: template
+       value_template: '{{ states.sensor.time.state == states.sensor.licht_clock_time_long.state }}'
+     condition:
+       condition: state
+       entity_id: input_boolean.licht_clock_status
+       state: 'on'
+     action:
+       service: script.wake_up

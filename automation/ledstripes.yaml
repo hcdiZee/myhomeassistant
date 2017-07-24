@@ -1,0 +1,39 @@
+ #####################
+ #### LED Stripes ####
+ #####################
+ 
+  - alias: rot
+  
+    trigger:
+      - platform: state
+        entity_id: input_select.leds
+        to: "rot"
+      
+    action: 
+      service: switch.turn_on
+      data:
+        entity_id: switch.rot
+
+  - alias: blau
+  
+    trigger:
+      - platform: state
+        entity_id: input_select.leds
+        to: "blau"
+      
+    action: 
+      service: switch.turn_on
+      data:
+        entity_id: switch.blau
+        
+  - alias: purple
+  
+    trigger:
+      - platform: state
+        entity_id: input_select.leds
+        to: "purple"
+      
+    action: 
+      service: switch.turn_on
+      data:
+        entity_id: switch.purple

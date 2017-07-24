@@ -1,0 +1,6 @@
+###########################
+### Boolean Licht Clock ###
+###########################
+
+ licht_clock_status:
+    initial: 0

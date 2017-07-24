@@ -1,0 +1,30 @@
+####################
+### Licht Wecker ###
+####################
+
+- platform: time_date
+  display_options:
+    - 'time'
+- platform: template
+  sensors: 
+    licht_clock_hour:
+      value_template: '{{ states.input_slider.licht_clock_hour.state | int }}'
+    licht_clock_min:
+      value_template: '{{ states.input_slider.licht_clock_min.state | int }}'    
+    licht_clock_time:
+      value_template: >-
+        {{ states.sensor.licht_clock_hour.state }}:
+        {%- if states.sensor.licht_clock_min.state|length == 1 -%}
+          0
+        {%- endif -%}
+          {{ states.sensor.licht_clock_min.state }}
+    licht_clock_time_long:
+      value_template: >-
+        {% if states.sensor.licht_clock_hour.state|length == 1 -%}
+          0
+        {%- endif -%}
+          {{ states.sensor.licht_clock_hour.state }}:
+        {%- if states.sensor.licht_clock_min.state|length == 1 -%}
+          0
+        {%- endif -%}
+          {{ states.sensor.licht_clock_min.state }}

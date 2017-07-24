@@ -1,0 +1,47 @@
+##################
+### Wohnzimmer ###
+##################
+  wohnzimmer:
+    name: 'Wohnzimmer'
+    view: yes
+    entities:
+      - media_player.pornolounge
+      - media_player.ue40ju6050_ue40ju6000
+############
+### Büro ###
+############   
+  buero:
+    name: 'Büro'
+    view: yes
+    entities:
+      - sensor.hc_dizee
+      - group.steckdosen
+      - group.leds
+      - group.licht_clock
+############
+### LEDs ###
+############       
+  leds:
+    name: 'LEDs'
+    entities:
+      - switch.leds
+      - input_select.leds
+##################
+### Steckdosen ###
+##################       
+  steckdosen:
+    name: 'Steckdosen'
+    entities:
+      - switch.softbox
+     
+####################
+### Licht Wecker ###
+####################
+  licht_clock:
+    name: 'Licht Wecker'
+    entities:
+      - sensor.licht_clock_time
+      - input_slider.licht_clock_hour
+      - input_slider.licht_clock_min
+      - input_boolean.licht_clock_status
+      

@@ -1,0 +1,57 @@
+############
+### LEDs ###
+############
+
+  automation.blau:
+    hidden: true
+  automation.rot:
+    hidden: true
+  automation.purple:
+    hidden: true
+  
+  switch.blau:
+    hidden: true
+  switch.rot:
+    hidden: true
+  switch.purple:
+    hidden: true
+    
+  input_select.leds:
+    friendly_name: LED Farben
+    name: LEDs
+    entity_picture: mdi:vector-selection
+    
+####################
+### Licht Wecker ###
+####################
+  
+  #automatisierung
+  automation.lichtwecker:
+    hidden: true
+  #Scripts
+  script.wake_up:
+    hidden: true
+  #Licht Sensoren
+  sensor.time:
+    hidden: true
+  sensor.licht_clock_hour:
+    hidden: true
+  sensor.licht_clock_min:
+    hidden: true
+  sensor.licht_clock_time_long:
+    hidden: true
+  sensor.licht_clock_time:
+    friendly_name: 'Licht Wecker'
+    icon: mdi:alarm
+  #Eingaben
+  input_slider.licht_clock_hour:
+    friendly_name: Stunde
+    icon: mdi:timer
+  input_slider.licht_clock_min:
+    friendly_name: Minute
+    icon: mdi:timer
+  input_boolean.licht_clock_status:
+    friendly_name: POWER
+    icon: mdi:alarm-check
+    
+   

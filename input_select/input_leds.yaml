@@ -1,0 +1,9 @@
+  leds:
+    name: Farbe
+    options: 
+      - rot
+      - purple
+      - blau
+      - none
+    initial: none
+    icon: mdi:led-on

@@ -1,0 +1,11 @@
+####################
+### Licht Wecker ###
+####################
+
+  wake_up:
+    sequence:
+      - service: switch.turn_on
+        data:
+          entity_id: 
+            - switch.leds
+            - switch.softbox

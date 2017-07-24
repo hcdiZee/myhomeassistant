@@ -1,0 +1,14 @@
+##########################
+### Slider Licht Clock ###
+##########################
+  
+  licht_clock_hour:
+    initial: 16
+    min: 0
+    max: 23
+    step: 1
+  licht_clock_min:
+    initial: 0 
+    min: 0
+    max: 55
+    step: 1

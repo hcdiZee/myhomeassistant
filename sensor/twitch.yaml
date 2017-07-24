@@ -1,0 +1,7 @@
+##############
+### Twitch ###
+##############
+
+  - platform: twitch
+    channels:
+      - hc_diZee
